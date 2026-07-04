@@ -129,15 +129,11 @@ This repository follows the GitHub Repository Standard (GRS). Use the GRS as the
 
 ## Repository-Specific Notes
 
-Customize this section for the repository.
-
-Recommended fields:
-
-- Project name:
-- Repository type/state:
-- Main architecture docs:
-- Main commands:
-- Test strategy:
-- Build or release process:
-- Deployment notes:
-- Project-specific restrictions:
+- Project name: Appsus (`ca-appsus`).
+- Repository type/state: Coding Academy static React app; Experimental until GRS baseline, documentation, and validation workflow are complete.
+- Main architecture docs: `README.md` should describe the static app structure, `apps/mail/`, `apps/note/`, shared `cmps/`, shared `services/`, and `assets/`.
+- Main commands: No package-manager workflow currently exists. Local development is expected through a static server such as VS Code Live Server or an equivalent local HTTP server.
+- Test strategy: No automated tests currently exist. Until tests are added, validation should include loading the local static site, checking routing, and verifying the GitHub Pages demo.
+- Build or release process: No build step currently exists. Release readiness requires LICENSE, SECURITY.md, CHANGELOG.md, current README links, GitHub Pages verification, and a final GRS re-audit.
+- Deployment notes: GitHub Pages should serve `https://aviad-benhamo.github.io/ca-appsus/`; the old `/Appsus/` URL should not be used.
+- Project-specific restrictions: Keep changes narrow because this is an archived Coding Academy project; do not migrate the app to a new framework or package system unless an approved issue explicitly asks for it.
