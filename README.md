@@ -6,7 +6,7 @@ Canonical repository: [aviad-benhamo/ca-appsus](https://github.com/aviad-benhamo
 
 🔗 **[Live Demo](https://aviad-benhamo.github.io/ca-appsus/)**
 
-![Appsus Preview](assets/img/AppsusLogo.jpg)
+![Appsus Preview](assets/logo/appsus-logo.jpg)
 
 ## ✨ Features
 

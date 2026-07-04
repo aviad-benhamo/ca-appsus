@@ -4,7 +4,7 @@ export function Home() {
     return (
         <section className="home-page">
             <div className="hero">
-                <img src="assets/img/AppsusLogo.jpg" alt="Appsus Logo" className="hero-logo" />
+                <img src="assets/logo/appsus-logo.jpg" alt="Appsus Logo" className="hero-logo" />
                 <h1>Welcome to Appsus</h1>
                 <p>One place for all your productivity needs</p>
             </div>

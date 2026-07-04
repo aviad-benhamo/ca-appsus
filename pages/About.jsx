@@ -7,9 +7,9 @@ export function About() {
                 <div className="profile-card">
                     <div className="img-container">
                         <img
-                            src="assets/img/my-photo.jpeg"
+                            src="assets/images/profile-placeholder.svg"
                             alt="Aviad Ben Hamo"
-                            onError={(e) => e.target.src = 'https://cdn.pixabay.com/photo/2020/07/01/12/58/icon-5359553_1280.png'}
+                            onError={(e) => e.target.src = 'assets/images/profile-placeholder.svg'}
                         />
                     </div>
 
