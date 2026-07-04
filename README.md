@@ -2,7 +2,9 @@
 
 A modern, responsive productivity suite built with React. Appsus combines an email client with a clean, intuitive interface inspired by Google's design language.
 
-🔗 **[Live Demo](https://aviad-benhamo.github.io/Appsus/)**
+Canonical repository: [aviad-benhamo/ca-appsus](https://github.com/aviad-benhamo/ca-appsus)
+
+🔗 **[Live Demo](https://aviad-benhamo.github.io/ca-appsus/)**
 
 ![Appsus Preview](assets/img/AppsusLogo.jpg)
 
@@ -42,12 +44,12 @@ A modern, responsive productivity suite built with React. Appsus combines an ema
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/aviad-benhamo/Appsus.git
+git clone https://github.com/aviad-benhamo/ca-appsus.git
 ```
 
 2. Navigate to the project directory:
 ```bash
-cd Appsus
+cd ca-appsus
 ```
 
 3. Open with a local server:
@@ -57,7 +59,7 @@ cd Appsus
 ## 📁 Project Structure
 
 ```
-Appsus/
+ca-appsus/
 ├── apps/
 │   └── mail/
 │       ├── cmps/           # Mail components
