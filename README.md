@@ -1,14 +1,14 @@
 # Appsus
 
 [![License: MIT](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
-[![Status: Experimental](https://img.shields.io/badge/status-Experimental%20%2F%20Not%20Ready-orange)](#project-status)
+[![Status: Experimental](https://img.shields.io/badge/status-Experimental%20%2F%20Released-orange)](#project-status)
 [![Demo: GitHub Pages](https://img.shields.io/badge/demo-GitHub%20Pages-blue)](https://aviad-benhamo.github.io/ca-appsus/)
 
 ## Project Status
 
-`ca-appsus` is an archived Coding Academy static React project and is currently **Experimental / Not Ready**.
+`ca-appsus` is an archived Coding Academy static React project and is currently **Experimental / Released**.
 
-The repository does not currently use a package manager, build pipeline, or automated test runner. The recommended first tagged release remains `v0.1.0` after the completed GRS verification pass and an explicit release-approval step.
+The repository does not currently use a package manager, build pipeline, or automated test runner. The approved first documented release is `v0.1.0`, while the repository remains an archived experimental learning project rather than an actively maintained production product.
 
 ## Overview
 

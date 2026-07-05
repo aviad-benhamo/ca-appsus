@@ -2,14 +2,14 @@
 
 ## Current Status
 
-`ca-appsus` is currently Experimental / Not Ready.
+`ca-appsus` is currently Experimental / Released.
 
 ## Current Priorities
 
 - Keep the GRS documentation baseline aligned with the actual repository state.
 - Preserve the manual validation workflow for routing, asset, and dependency changes.
 - Keep GitHub Pages references, screenshots, and repository identity current.
-- Complete the final release-preparation polish before considering the first tagged release.
+- Keep post-release documentation aligned with the released `v0.1.0` baseline.
 
 ## Deferred or Future Considerations
 
@@ -19,4 +19,4 @@
 
 ## First Release Target
 
-The recommended first release target remains `v0.1.0` after the completed final GRS verification and an explicit release-approval decision.
+The first documented release is `v0.1.0` on `2026-07-05`.

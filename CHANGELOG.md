@@ -2,7 +2,7 @@
 
 All notable changes to this repository will be documented in this file.
 
-The project is currently Experimental / Not Ready and unreleased. Historical releases have not been reconstructed retroactively.
+The project is currently Experimental / Released. Historical releases before `v0.1.0` have not been reconstructed retroactively.
 
 This repository follows Semantic Versioning for approved releases and Git tags in the format `vMAJOR.MINOR.PATCH`.
 
@@ -10,7 +10,9 @@ Because this repository does not use a package manager, `CHANGELOG.md` is curren
 
 ## [Unreleased]
 
-The `[Unreleased]` section is the active staging area for work that may become part of a future approved release. Move entries into a numbered version section only during explicit release preparation.
+The `[Unreleased]` section is the active staging area for work after `v0.1.0`.
+
+## [0.1.0] - 2026-07-05
 
 ### Added
 

@@ -2,9 +2,9 @@
 
 ## Current Status
 
-`ca-appsus` is currently Experimental / Not Ready.
+`ca-appsus` is currently Experimental / Released.
 
-Do not create a public release, Git tag, GitHub Release, or version milestone until release readiness is explicitly approved.
+The approved first documented release is `v0.1.0` on `2026-07-05`.
 
 ## Versioning Baseline
 
@@ -15,11 +15,11 @@ Do not create a public release, Git tag, GitHub Release, or version milestone un
 
 Use `0.x.x` versions until the repository is intentionally declared stable.
 
-The recommended first release target remains `v0.1.0`, and it should be considered only after the completed final GRS verification, current documentation alignment, and explicit release approval.
+The current documented release baseline is `v0.1.0`.
 
 ## Baseline Release Preparation
 
-Before any first public release is considered, confirm:
+Before any future release is considered, confirm:
 
 - `LICENSE` exists
 - `SECURITY.md` exists
@@ -31,7 +31,7 @@ Before any first public release is considered, confirm:
 
 ## Change Documentation
 
-Before release preparation:
+Before preparing a future release:
 
 1. Record user-facing and repository-level changes under `## [Unreleased]` in `CHANGELOG.md`.
 2. Do not invent historical versions that were never published.
