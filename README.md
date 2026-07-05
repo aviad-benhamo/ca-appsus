@@ -154,18 +154,6 @@ Reference documents:
 - [docs/release-process.md](docs/release-process.md)
 - [docs/dependency-policy.md](docs/dependency-policy.md)
 
-## AI Notice
-
-AI-assisted changes in this repository should follow the tracked repository rules in [AGENTS.md](AGENTS.md).
-
-Important expectations include:
-
-- chat with Aviad in Hebrew
-- keep code, documentation, commit messages, and technical artifacts in English
-- do not push directly to `main`
-- keep scope narrow
-- document the validation that was actually performed
-
 ## Roadmap
 
 See [ROADMAP.md](ROADMAP.md) for the current documentation and release-readiness priorities.

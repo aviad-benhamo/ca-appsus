@@ -12,6 +12,10 @@ Because this repository does not use a package manager, `CHANGELOG.md` is curren
 
 The `[Unreleased]` section is the active staging area for work after `v0.1.0`.
 
+### Changed
+
+- Removed the README AI notice section and stopped tracking `AGENTS.md` in Git while keeping the local file for repository-specific agent guidance.
+
 ## [0.1.0] - 2026-07-05
 
 ### Added
