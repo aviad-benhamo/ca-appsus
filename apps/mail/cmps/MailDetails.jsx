@@ -3,12 +3,11 @@ import { mailService } from "../services/mail.service.js"
 const { useEffect, useState } = React
 const { useParams, useNavigate, useOutletContext } = ReactRouterDOM
 
-export function MailDetails({ mails }) {
+export function MailDetails() {
     const [mail, setMail] = useState(null)
     const { mailId } = useParams()
     const navigate = useNavigate()
     const { onUpdateMail, onRemoveMail } = useOutletContext()
-
 
     useEffect(() => {
         loadMail()
@@ -18,7 +17,7 @@ export function MailDetails({ mails }) {
         mailService.get(mailId)
             .then(mail => setMail(mail))
             .catch(err => {
-                console.log('Problem getting mail', err)
+                console.error('Failed to load mail details', err)
                 navigate('/mail')
             })
     }
@@ -34,18 +33,16 @@ export function MailDetails({ mails }) {
         navigate('/mail')
     }
 
-
     if (!mail) return <div>Loading...</div>
-
 
     return (
         <section className="mail-details">
             <div className="toolbar">
-                <button onClick={() => navigate('/mail')}>← Back</button>
+                <button onClick={() => navigate('/mail')}>Back</button>
                 <button onClick={onToggleReadStatus}>
                     Mark as Unread
                 </button>
-                <button onClick={onDeleteMail}>🗑️ Delete</button>
+                <button onClick={onDeleteMail}>Delete</button>
             </div>
 
             <h2>{mail.subject}</h2>
@@ -54,7 +51,9 @@ export function MailDetails({ mails }) {
                     {mail.fromAvatar ? (
                         <img src={mail.fromAvatar} alt="Avatar" />
                     ) : (
-                        <span className="fallback-avatar">👤</span>
+                        <span className="fallback-avatar">
+                            <i className="fa-solid fa-user"></i>
+                        </span>
                     )}
                 </div>
 

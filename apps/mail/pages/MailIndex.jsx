@@ -37,7 +37,7 @@ export function MailIndex() {
     function loadMails() {
         mailService.query(filterBy)
             .then(setMails)
-            .catch(err => console.log('Had issues loading mails', err))
+            .catch(err => console.error('Failed to load mails', err))
     }
 
     function onSetFilter(filterByFromChild) {
@@ -56,7 +56,7 @@ export function MailIndex() {
                 refreshStats()
             })
             .catch(err => {
-                console.log('Cannot update mail', err)
+                console.error('Failed to update mail', err)
                 showErrorMsg('Cannot update mail')
             })
     }
@@ -70,7 +70,7 @@ export function MailIndex() {
             })
             .catch(err => {
                 showErrorMsg('Failed to move conversation to Trash')
-                console.log('Cannot remove mail', err)
+                console.error('Failed to remove mail', err)
             })
     }
 
@@ -94,7 +94,7 @@ export function MailIndex() {
                 return savedMail
             })
             .catch(err => {
-                console.log('Cannot save mail', err)
+                console.error('Failed to save mail', err)
                 if (!isAutoSave) showErrorMsg('Cannot save mail')
             })
     }

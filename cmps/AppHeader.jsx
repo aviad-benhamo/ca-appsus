@@ -23,25 +23,26 @@ export function AppHeader() {
             {isOpen && (
                 <div className="apps-dropdown">
                     <div className="app-item" onClick={() => onNavigate('/')}>
-                        <span className="icon 🏠">
+                        <span className="icon">
                             <i className="fa-solid fa-house"></i>
                         </span>
                         <span>Home</span>
                     </div>
 
                     <div className="app-item" onClick={() => onNavigate('/about')}>
-                        <span className="icon ℹ️">
+                        <span className="icon">
                             <i className="fa-solid fa-info"></i>
                         </span>
                         <span>About</span>
                     </div>
 
                     <div className="app-item" onClick={() => onNavigate('/mail')}>
-                        <span className="icon ✉️">
+                        <span className="icon">
                             <i className="fa-solid fa-envelope"></i>
                         </span>
                         <span>Mail</span>
                     </div>
+
                     <div
                         className="app-item disabled"
                         title="Coming soon!"
@@ -53,7 +54,6 @@ export function AppHeader() {
                         <span>Keep</span>
                     </div>
                 </div>
-
             )}
 
             {isOpen && <div className="backdrop" onClick={() => setIsOpen(false)}></div>}
