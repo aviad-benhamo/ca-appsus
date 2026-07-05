@@ -8,7 +8,7 @@
 
 `ca-appsus` is an archived Coding Academy static React project and is currently **Experimental / Not Ready**.
 
-The repository does not currently use a package manager, build pipeline, or automated test runner. The recommended first tagged release is `v0.1.0` only after the GRS baseline, validation workflow, README alignment, and final GRS audit are complete.
+The repository does not currently use a package manager, build pipeline, or automated test runner. The recommended first tagged release remains `v0.1.0` after the completed GRS verification pass and an explicit release-approval step.
 
 ## Overview
 

@@ -9,7 +9,7 @@
 - Keep the GRS documentation baseline aligned with the actual repository state.
 - Preserve the manual validation workflow for routing, asset, and dependency changes.
 - Keep GitHub Pages references, screenshots, and repository identity current.
-- Complete the final GRS compliance re-audit before considering a first release.
+- Complete the final release-preparation polish before considering the first tagged release.
 
 ## Deferred or Future Considerations
 
@@ -19,4 +19,4 @@
 
 ## First Release Target
 
-The recommended first release target is `v0.1.0` only after the GRS baseline, validation workflow, README alignment, and final GRS audit are complete.
+The recommended first release target remains `v0.1.0` after the completed final GRS verification and an explicit release-approval decision.

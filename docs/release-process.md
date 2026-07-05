@@ -15,7 +15,7 @@ Do not create a public release, Git tag, GitHub Release, or version milestone un
 
 Use `0.x.x` versions until the repository is intentionally declared stable.
 
-The recommended first release target is `v0.1.0`, and it should be considered only after the GRS baseline, validation workflow, README alignment, and final GRS audit are complete.
+The recommended first release target remains `v0.1.0`, and it should be considered only after the completed final GRS verification, current documentation alignment, and explicit release approval.
 
 ## Baseline Release Preparation
 

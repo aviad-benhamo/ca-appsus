@@ -20,6 +20,7 @@ The `[Unreleased]` section is the active staging area for work that may become p
 
 ### Changed
 
+- Polished release-readiness wording across the README and supporting release documents after the completed final GRS verification pass.
 - Reorganized public media assets into dedicated logo, images, and screenshots folders.
 - Replaced the repository's personal profile photo asset with a neutral local placeholder for public safety.
 - Documented the release and versioning baseline, including SemVer expectations, approval boundaries, and the recommended first release target of `v0.1.0` after baseline completion.
