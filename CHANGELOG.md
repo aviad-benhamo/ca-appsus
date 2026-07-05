@@ -16,9 +16,11 @@ The `[Unreleased]` section is the active staging area for work that may become p
 
 - Repository documentation baseline files.
 - Supporting documentation under `docs/` for validation, release preparation, and dependency management.
+- `ROADMAP.md` with the current release-readiness and documentation priorities.
 
 ### Changed
 
 - Reorganized public media assets into dedicated logo, images, and screenshots folders.
 - Replaced the repository's personal profile photo asset with a neutral local placeholder for public safety.
 - Documented the release and versioning baseline, including SemVer expectations, approval boundaries, and the recommended first release target of `v0.1.0` after baseline completion.
+- Rewrote `README.md` to match the GRS structure with current repository identity, demo links, screenshots, development guidance, and AI notice.

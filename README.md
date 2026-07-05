@@ -1,105 +1,179 @@
 # Appsus
 
-A modern, responsive productivity suite built with React. Appsus combines an email client with a clean, intuitive interface inspired by Google's design language.
+[![License: MIT](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
+[![Status: Experimental](https://img.shields.io/badge/status-Experimental%20%2F%20Not%20Ready-orange)](#project-status)
+[![Demo: GitHub Pages](https://img.shields.io/badge/demo-GitHub%20Pages-blue)](https://aviad-benhamo.github.io/ca-appsus/)
 
-Canonical repository: [aviad-benhamo/ca-appsus](https://github.com/aviad-benhamo/ca-appsus)
+## Project Status
 
-🔗 **[Live Demo](https://aviad-benhamo.github.io/ca-appsus/)**
+`ca-appsus` is an archived Coding Academy static React project and is currently **Experimental / Not Ready**.
 
-![Appsus Preview](assets/logo/appsus-logo.jpg)
+The repository does not currently use a package manager, build pipeline, or automated test runner. The recommended first tagged release is `v0.1.0` only after the GRS baseline, validation workflow, README alignment, and final GRS audit are complete.
 
-## ✨ Features
+## Overview
 
-### 📧 Email App
-- **Full email management** - Compose, read, star, and delete emails
-- **Smart folders** - Inbox, Sent, Drafts, Starred, and Trash
-- **Search functionality** - Quick search through your emails
-- **Sorting options** - Sort by date or title
-- **Draft auto-save** - Never lose your work
-- **Unread count badges** - Stay on top of new messages
-- **Gmail-inspired design** - Familiar and intuitive interface
+Appsus is a static single-page React application that bundles a small productivity-themed experience around a Gmail-inspired mail client.
 
-### 📱 Responsive Design
-- **Mobile-first approach** - Optimized for all screen sizes
-- **Collapsible sidebar** - Slide-out navigation on mobile
-- **Touch-friendly** - Large tap targets for mobile users
-- **Fullscreen compose** - Distraction-free writing on mobile
+The current public demo focuses on:
 
-## 🛠️ Technologies
+- a landing page
+- an about page
+- a mail module with local demo data and responsive navigation
 
-- **React** - Component-based UI library
-- **React Router** - Client-side routing (SPA)
-- **React Hooks** - useState, useEffect, custom hooks
-- **CSS3** - Modern styling with CSS variables & Flexbox/Grid
-- **Local Storage** - Persistent data storage
-- **Font Awesome** - Icon library
+Canonical repository:
 
-## 🚀 Getting Started
+`https://github.com/aviad-benhamo/ca-appsus`
+
+## Features
+
+- HashRouter-based SPA that works on GitHub Pages without server-side routing.
+- Mail workflow with inbox, sent, drafts, starred, and trash views.
+- Search, unread filtering, and date/title sorting in the mail module.
+- Compose, auto-save draft, star, read, and trash actions backed by local storage.
+- Responsive layout with a mobile-friendly header, drawer, and mail sidebar.
+- Shared styling, utilities, and service helpers for static browser execution.
+- Scaffolded `apps/note/` module kept in the repository for archival completeness, but not enabled in the current routed demo.
+
+## Screenshots / Demo
+
+Live demo:
+
+[https://aviad-benhamo.github.io/ca-appsus/](https://aviad-benhamo.github.io/ca-appsus/)
+
+Home screen:
+
+![Appsus home screen](assets/screenshots/home-page.png)
+
+Mail screen:
+
+![Appsus mail screen](assets/screenshots/mail-page.png)
+
+Primary logo:
+
+![Appsus logo](assets/logo/appsus-logo.jpg)
+
+## Quick Start
 
 ### Prerequisites
-- A modern web browser
-- A local server (e.g., Live Server VS Code extension)
 
-### Installation
+- Modern desktop or mobile browser
+- Local static server such as VS Code Live Server or Python's built-in HTTP server
 
-1. Clone the repository:
+### Clone
+
 ```bash
 git clone https://github.com/aviad-benhamo/ca-appsus.git
-```
-
-2. Navigate to the project directory:
-```bash
 cd ca-appsus
 ```
 
-3. Open with a local server:
-   - Using VS Code: Right-click `index.html` → "Open with Live Server"
-   - Or use any static file server of your choice
+### Run Locally
 
-## 📁 Project Structure
+Use a static server from the repository root. Examples:
 
+```bash
+python -m http.server 5500
 ```
+
+Or open the folder in VS Code and serve `index.html` with Live Server.
+
+After the server starts, open the app through the served URL rather than a `file://` path.
+
+## Configuration
+
+This repository currently has no `.env` workflow and no runtime secret configuration.
+
+- Frontend libraries are loaded from repository-managed files under `lib/`.
+- Some third-party assets are referenced directly from public URLs in `index.html`.
+- The canonical public deployment target is `https://aviad-benhamo.github.io/ca-appsus/`.
+- The old `/Appsus/` GitHub Pages path should not be used in documentation or release material.
+
+For dependency and validation details, see:
+
+- [docs/dependency-policy.md](docs/dependency-policy.md)
+- [docs/validation.md](docs/validation.md)
+- [SECURITY.md](SECURITY.md)
+
+## Design Principles
+
+- Preserve the static-app architecture unless a separate approved issue changes it.
+- Keep maintenance changes narrow and reviewable because this is an archived learning project.
+- Prefer repository-managed documentation and explicit manual validation over speculative tooling changes.
+- Keep GitHub Pages compatibility through hash-based routing and static assets.
+
+## Project Structure
+
+```text
 ca-appsus/
-├── apps/
-│   └── mail/
-│       ├── cmps/           # Mail components
-│       ├── pages/          # Mail pages
-│       └── services/       # Mail services
-├── assets/
-│   ├── css/               # Stylesheets
-│   │   ├── apps/          # App-specific styles
-│   │   ├── basics/        # Base styles
-│   │   ├── cmps/          # Component styles
-│   │   ├── pages/         # Page styles
-│   │   └── setup/         # CSS variables
-│   ├── fonts/
-│   └── img/
-├── cmps/                  # Shared components
-├── lib/                   # External libraries
-├── pages/                 # Main pages
-├── services/              # Shared services
-├── app.js                 # Entry point
-├── index.html
-└── RootCmp.jsx           # Root component
+|-- apps/
+|   |-- mail/
+|   |   |-- cmps/
+|   |   |-- pages/
+|   |   `-- services/
+|   `-- note/
+|       |-- cmps/
+|       |-- pages/
+|       `-- services/
+|-- assets/
+|   |-- css/
+|   |-- fonts/
+|   |-- images/
+|   |-- logo/
+|   `-- screenshots/
+|-- cmps/
+|-- docs/
+|-- lib/
+|-- pages/
+|-- services/
+|-- app.js
+|-- RootCmp.jsx
+`-- index.html
 ```
 
-## 🎨 Design Highlights
+## Architecture
 
-- **Clean UI** - Minimalist design with focus on usability
-- **Consistent theming** - CSS custom properties for easy customization
-- **Smooth animations** - Subtle transitions enhance the experience
-- **Accessibility** - Semantic HTML and proper contrast ratios
+- `app.js` bootstraps the React root into `index.html`.
+- `RootCmp.jsx` wires the app through `ReactRouterDOM.HashRouter`.
+- `pages/` contains shared top-level routes such as `Home` and `About`.
+- `apps/mail/` contains the active feature module, including route components, local data services, and mail-specific UI.
+- `apps/note/` is present as an archived scaffold but is not currently mounted in the router.
+- `cmps/` and `services/` provide shared UI and utility helpers across the static app.
 
-## 👨‍💻 Author
+## Development
 
-**Aviad Ben Hamo**
-- GitHub: [@aviad-benhamo](https://github.com/aviad-benhamo)
-- LinkedIn: [Aviad Ben Hamo](https://www.linkedin.com/in/aviad-ben-hamo-176a18122/)
+There is currently no package-manager workflow, no build command, and no automated test command.
 
-## 📄 License
+Recommended development workflow:
 
-This project is open source and available under the [MIT License](LICENSE).
+1. Serve the repository with a local static server.
+2. Make changes without introducing a new framework or build pipeline unless an approved issue explicitly requires it.
+3. Re-run the manual validation checklist after routing, asset, dependency, or documentation changes.
 
----
+Reference documents:
 
-⭐ If you found this project useful, please consider giving it a star!
+- [docs/validation.md](docs/validation.md)
+- [docs/release-process.md](docs/release-process.md)
+- [docs/dependency-policy.md](docs/dependency-policy.md)
+
+## AI Notice
+
+AI-assisted changes in this repository should follow the tracked repository rules in [AGENTS.md](AGENTS.md).
+
+Important expectations include:
+
+- chat with Aviad in Hebrew
+- keep code, documentation, commit messages, and technical artifacts in English
+- do not push directly to `main`
+- keep scope narrow
+- document the validation that was actually performed
+
+## Roadmap
+
+See [ROADMAP.md](ROADMAP.md) for the current documentation and release-readiness priorities.
+
+## Changelog
+
+Pending work is tracked under [`[Unreleased]` in CHANGELOG.md](CHANGELOG.md).
+
+## License
+
+This project is available under the [MIT License](LICENSE).
